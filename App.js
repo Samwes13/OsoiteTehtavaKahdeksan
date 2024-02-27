@@ -19,7 +19,7 @@ export default function App() {
         const newCoordinates = { latitude: parseFloat(lat), longitude: parseFloat(lon) };
         setCoordinates(newCoordinates);
         if (mapRef.current) {
-          // Siirry uusiin koordinaatteihin
+          // Uusiin koordinaatteihin siirtyminen
           mapRef.current.animateToRegion({
             ...newCoordinates,
             latitudeDelta: 0.0922,
